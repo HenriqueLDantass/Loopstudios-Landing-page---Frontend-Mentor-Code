@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+}
+header{
+    background-image: url(./images/desktop/image-hero.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container-header{
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 3%;
+}
+.nav-desk ul{
+    display: flex;
+}
+.nav-desk li{
+    list-style: none;
+    padding-left: 20px;
+}
+.nav-desk li a{
+    color: #FFF;
+    font-family: 'Alata', sans-serif;
+    text-decoration: none;
+}
+.nav-desk li .active{
+    border-bottom: 2px solid #FFF
+}
+.nav-desk li a:hover{
+    border-bottom: 2px solid;
+}
+.text-banner{
+    position: relative;
+    border: 2px solid #FFF;
+    text-transform: uppercase;
+    width: 420px;
+    padding: 15px;
+    font-size: 50px;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 18%;
+    margin-top: 0px;
+}
+
+
+.container-main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+.text-main{
+    background-color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20%;
+    margin-left: -10%;
+    padding: 60px;
+    height: 300px;
+}
+.text-main h3{
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: 10px;
+}
+.text-main p{
+    color: rgb(151, 150, 150);
+    width: 450px;
+}
+.img-oculos{
+margin-left: 10%;
+}
+
+.out-creation{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1130px;
+    margin: auto;
+    height: 5vh;
+    align-items: center;
+}
+.out-creation .title{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.out-creation .btn{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #FFF;
+    text-decoration: none;
+}
