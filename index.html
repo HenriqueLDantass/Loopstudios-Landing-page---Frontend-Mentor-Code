@@ -16,18 +16,18 @@
   <header>
     <section class="container-header">
       <div class="logo"><img src="./images/logo.svg" alt=""></div>
-      <nav class="nav-desk">
-        <ul>
+
+      <nav id="nav">
+        <div aria-label="Abrir Menu" id="menu-hambuger" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+
+        </div>
+        <ul id="menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#" class="active">Support</a></li>
-        </ul>
-      </nav>
-
-      <nav class="nav-mobile">
-        <img src="./images/icon-hamburger.svg" alt="">
         </ul>
       </nav>
     </section>
@@ -185,7 +185,7 @@
 
     <div class="nav-bottom">
       <nav class="nav-desk">
-        <ul>
+        <ul id="menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Events</a></li>
@@ -199,7 +199,7 @@
 
 
   <script src="https://kit.fontawesome.com/ec7e189e00.js" crossorigin="anonymous"></script>
-
+  <script src="./main/script.js"></script>
 </body>
 
 </html>

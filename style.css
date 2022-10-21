@@ -27,29 +27,34 @@ header{
 .logo img{
     width: 150px;
 }
-.nav-desk ul{
+#nav ul{
     display: flex;
 }
-.nav-desk li{
+#menu li{
     list-style: none;
     padding-left: 20px;
 }
-.nav-desk li a{
+#menu li a{
     color: #FFF;
     font-family: 'Alata', sans-serif;
     text-decoration: none;
 }
-.nav-desk li .active{
+#menu li .active{
     border-bottom: 2px solid #FFF
 }
-.nav-desk li a:hover{
+#menu li a:hover{
     border-bottom: 2px solid;
 }
-
-
-.nav-mobile{
+#menu-hambuger{
     display: none;
 }
+
+
+
+
+
+
+
 
 
 .text-banner{
@@ -121,9 +126,7 @@ header{
     color: #FFF;
     text-decoration: none;
 }
-.button-mobile{
-    display: none;
-}
+
 
 
 
@@ -153,7 +156,7 @@ header{
 footer{
     margin-top: 50px;
     background-color: #000;
-    height: 150px;
+    height: 230px;
 }
 .footer-social{
     max-width: 1220px;
@@ -176,6 +179,12 @@ footer{
     max-width: 1220px;
     margin: auto;
     
+}
+.button-mobile{
+    display: none;
+}
+#menu{
+    display: flex;
 }
 
 @media (max-width: 1125px) {
@@ -204,19 +213,76 @@ footer{
    .group-1{
     display: none;
    }
-   .nav-desk{
-    display: none;
-   }
-   .nav-mobile{
+   #menu-hambuger{
     display: block;
+    }
+   #nav #menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: rgb(235, 11, 167);
+    transition: .6s;
+    height: 0;
+    z-index: 999;
+    visibility: hidden;
+    overflow-y:hidden ;
    }
+   #nav.active #menu{
+    display: block;
+    height: 70vh;
+    visibility: visible;
+   }
+    #menu li{
+        margin-top: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 3px solid #FFF;
+        width:30px;
+        display: block;    
+      }
+        #hamburger::after,
+        #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2.5px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+        color: #FFF;
+  }
+      
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
    .text-banner{
     border: 1px solid ;
     padding: 10px;
     width: 70%;
     text-align: center;
     font-size: 2rem;
-    margin-top: 400px;
+    margin-top: 300px;
    }
    .container-main{
     display: block;
@@ -225,7 +291,6 @@ footer{
     align-items: center;
    }
    .text-main{
-    margin-top: 1000px;
     position: relative;
     text-align: center;
     font-size: 3vh;
@@ -281,6 +346,21 @@ footer{
         padding: 2%;
         border-radius: 20%;
     }
+    .button-mobile a:hover{
+        color: #FFF;
+        background-color: #000;
+        transition: 0.6s;
+    }
+    .nav-desk li{
+        text-align: center;
+        padding: 5px;
+    }
+    .nav-desk li a{
+        color: #FFF;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
     
 }
 
