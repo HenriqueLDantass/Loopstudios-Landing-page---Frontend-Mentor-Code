@@ -48,15 +48,6 @@ header{
 #menu-hambuger{
     display: none;
 }
-
-
-
-
-
-
-
-
-
 .text-banner{
     max-width: 1220px;
     margin: auto;
@@ -68,10 +59,7 @@ header{
     font-size: 50px;
     color: #FFF;
     font-family: 'Josefin Sans', sans-serif;
-    
 }
-
-
 .container-main{
     max-width: 1220px;
     margin: auto;
@@ -101,8 +89,6 @@ header{
     padding: 15px;
     position: relative;
 }
-
-
 .out-creation{
     display: flex;
     justify-content: space-between;
@@ -126,10 +112,6 @@ header{
     color: #FFF;
     text-decoration: none;
 }
-
-
-
-
 .group-1{
     display: flex;
     justify-content: center;
@@ -138,6 +120,7 @@ header{
 }
 .group-2{
     display: none;
+    overflow: hidden;
 }
 .item-imagem img{
     
@@ -156,15 +139,14 @@ header{
 footer{
     margin-top: 50px;
     background-color: #000;
-    height: 230px;
+    height: 150px;
 }
 .footer-social{
     max-width: 1220px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 30px 15px;
 }
 .social-item{
     display: flex;
@@ -185,6 +167,39 @@ footer{
 }
 #menu{
     display: flex;
+}
+.creditos{
+color: #FFF;
+text-align: center;
+font-family: 'Josefin Sans', sans-serif;
+margin-top: 15px;
+padding: 10px;
+
+}
+.creditos p a{
+    text-decoration: none;  
+    color: #FFF;
+    font-weight: bold;
+    
+}
+.creditos p a:hover{
+    transition: 1s;
+    color: rgb(235, 16, 151);
+}
+/*Animação*/
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+[data-anime='left']{
+    transform: translate3d(-100px,0,0) ;
+}
+[data-anime='right']{
+    transform: translate3d(100px,0,0) ;
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px) ;
 }
 
 @media (max-width: 1125px) {
@@ -208,7 +223,6 @@ footer{
 @media (max-width: 620px) {
     header{
         background-image: url(./images/mobile/image-hero.jpg);
-
     }
    .group-1{
     display: none;
@@ -238,6 +252,10 @@ footer{
         margin-top: 40px;
         padding: 10px;
         text-align: center;
+    }
+    #menu li a:hover{
+        transition: .08s;
+        font-weight: bold;
     }
     #btn-mobile {
         display: flex;
@@ -360,7 +378,5 @@ footer{
         text-decoration: none;
         font-family: 'Josefin Sans', sans-serif;
     }
-    
-    
 }
 
